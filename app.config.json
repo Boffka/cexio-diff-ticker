@@ -1,0 +1,6 @@
+{
+  "refreshTime": "*/10 * * * * *",
+  "precision": 4,
+  "timeFormat": "mm:ss",
+  "silent": false
+}
