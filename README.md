@@ -9,8 +9,8 @@ Tested with following node versions:
 ## Getting Started
 
 ```
-git clone dhfjghdjfghkdjfhg
-cd hhhh
+git clone https://github.com/Boffka/cexio-diff-ticker.git
+cd cexio-diff-ticker
 npm i
 npm start
 ```
@@ -27,19 +27,16 @@ The format of the default configuration file:
   "silent": false
 }
 ```
-**refreshTime** - *Default: "\*/10 \* \* \* \* \*"* 
-:The frequency of updates is REST connectors. String in crontab syntax [format](https://github.com/merencia/node-cron).
+**refreshTime** - *Default: "\*/10 \* \* \* \* \*"* The frequency of REST connectors updates. String in crontab syntax [format](https://github.com/merencia/node-cron).
 
-**precission** - *Default: 4* 
-: Number of digits after the decimal point in percent
+**precission** - *Default: 4* Number of digits after the decimal point in percent
 
-**precission** - *Default: "mm:ss"* 
-: Output date [format](https://momentjs.com/docs/#/displaying/)
+**precission** - *Default: "mm:ss"* Output date [format](https://momentjs.com/docs/#/displaying/)
 
-**silent** - *Default: false* 
-: Silent mode: Without output to console, only tick event 
+**silent** - *Default: false* Silent mode: Without output to console, only tick event 
 
 ###Configuring in constructor
+
 You can also configure the utility by specifying parameters in the startup line
 ```
 const CEXTicker = require("./dist/cex-ticker");
@@ -52,6 +49,7 @@ const Ticker = new CEXTicker(options);
 
 
 ###Running with args
+
 You can also configure the utility by specifying parameters in the startup line
 ```
 node example.js --precission 4 --timeFormat "mm:ss"
@@ -85,13 +83,6 @@ This event is not implemented.
 ```
 npm test
 ```
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
 
 ## Versioning
 
