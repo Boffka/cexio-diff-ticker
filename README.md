@@ -15,8 +15,8 @@ npm i
 npm start
 ```
 
-##Configuration
-###Default config.json
+## Configuration
+### Default config.json
 The format of the default configuration file:
 
 ```
@@ -35,7 +35,7 @@ The format of the default configuration file:
 
 **silent** - *Default: false* Silent mode: Without output to console, only tick event 
 
-###Configuring in constructor
+### Configuring in constructor
 
 You can also configure the utility by specifying parameters in the startup line
 ```
@@ -48,16 +48,15 @@ const Ticker = new CEXTicker(options);
 
 
 
-###Running with args
+### Running with args
 
 You can also configure the utility by specifying parameters in the startup line
 ```
 node example.js --precission 4 --timeFormat "mm:ss"
 ```
 
-
-##Events
-###tick
+## Events
+### tick
 Duplicate the price difference that is output to the console.
 Message format JSON:
 ```
@@ -66,7 +65,7 @@ Message format JSON:
   diff: 'Price difference in percent'
 }
 ```
-###price
+### price
 This event is emitted when any connector receives a new price.
 ```
 {
@@ -74,9 +73,9 @@ This event is emitted when any connector receives a new price.
   price: 'New received price'
 }
 ```
-###connectors
+### connectors
 This event is thrown when the connectors state changes.
-###errors
+### errors
 This event is not implemented.
 
 ## Running the tests
